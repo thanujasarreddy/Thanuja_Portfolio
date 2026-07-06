@@ -1,0 +1,305 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+/* Navbar */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    background:#111827;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+#menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:150px 8%;
+    min-height:100vh;
+}
+
+.hero-text{
+    width:55%;
+}
+
+.hero-text h3{
+    font-size:28px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    color:#38bdf8;
+    margin:10px 0;
+}
+
+.hero-text h2{
+    color:#facc15;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero-image{
+    width:40%;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #38bdf8;
+    box-shadow:0 0 35px #38bdf8;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    margin-right:15px;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.btn2{
+    background:#facc15;
+    color:black;
+}
+
+/* Sections */
+
+section{
+    padding:90px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#38bdf8;
+    font-size:40px;
+}
+
+/* About */
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:2;
+}
+
+/* Skills */
+
+.skill{
+    margin-bottom:25px;
+}
+
+.skill h3{
+    margin-bottom:10px;
+}
+
+.bar{
+    width:100%;
+    height:12px;
+    background:#1e293b;
+    border-radius:20px;
+}
+
+.bar span{
+    display:block;
+    height:100%;
+    background:#38bdf8;
+    border-radius:20px;
+}
+
+/* Projects */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#273549;
+}
+
+.card i{
+    font-size:45px;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+/* Contact */
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:#1e293b;
+    color:white;
+}
+
+form button{
+    border:none;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    background:#111827;
+    padding:30px;
+    text-align:center;
+}
+
+.social{
+    margin-bottom:20px;
+}
+
+.social a{
+    color:white;
+    font-size:28px;
+    margin:0 12px;
+    transition:.4s;
+}
+
+.social a:hover{
+    color:#38bdf8;
+}
+
+footer p{
+    color:#aaa;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-image{
+    width:100%;
+    margin-top:40px;
+}
+
+.hero-image img{
+    width:260px;
+    height:260px;
+}
+
+.nav-links{
+    display:none;
+}
+
+#menu-btn{
+    display:block;
+}
+
+section h2{
+    font-size:32px;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+}
